@@ -41,14 +41,16 @@ class Graph:
 
 if __name__ == '__main__':
     g = Graph(7)
-    g.addEdge(0, 1, -1)
-    g.addEdge(0, 2, 4)
-    g.addEdge(1, 2, 3)
-    g.addEdge(1, 3, 2)
-    g.addEdge(1, 4, 2)
-    g.addEdge(3, 2, 5)
-    g.addEdge(4, 1, 1)
-    g.addEdge(5, 4, -3)
- 
+    g.addEdge(0,1,9)
+    g.addEdge(0,2,20)
+    g.addEdge(0,3,16)
+    g.addEdge(1,5,28)
+    g.addEdge(1,6,16)
+    g.addEdge(2,3,7)
+    g.addEdge(2,4,13)
+    g.addEdge(3,4,15)
+    g.addEdge(4,5,16)
+    g.addEdge(4,6,6)
+    g.addEdge(5,6,13)
     
     g.BellmanFord(0)
