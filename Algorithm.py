@@ -1,4 +1,3 @@
-
 class Graph:
  
     def __init__(self, vertices):
@@ -41,15 +40,15 @@ class Graph:
  
 
 if __name__ == '__main__':
-    g = Graph(5)
-    g.addEdge("A", "B", -1)
-    g.addEdge("A", "C", 4)
-    g.addEdge("B", "C", 3)
-    g.addEdge("B", "D", 2)
-    g.addEdge("B", "E", 2)
-    g.addEdge("D", "C", 5)
-    g.addEdge("D", "B", 1)
-    g.addEdge("E", "D", -3)
+    g = Graph(7)
+    g.addEdge(0, 1, -1)
+    g.addEdge(0, 2, 4)
+    g.addEdge(1, 2, 3)
+    g.addEdge(1, 3, 2)
+    g.addEdge(1, 4, 2)
+    g.addEdge(3, 2, 5)
+    g.addEdge(4, 1, 1)
+    g.addEdge(5, 4, -3)
  
     
-    g.BellmanFord("A")
+    g.BellmanFord(0)
