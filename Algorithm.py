@@ -10,6 +10,7 @@ class Graph:
     
     def printArr(self, dist):
         print("Vertex Distance from Source")
+        print("Current Location \t Time")
         for i in range(self.V):
             print("{0}\t\t{1}".format(i, dist[i]))
  
@@ -54,3 +55,4 @@ if __name__ == '__main__':
     g.addEdge(5,6,13)
     
     g.BellmanFord(0)
+
